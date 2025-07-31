@@ -8,29 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 42 47% 97%;
+    --foreground: 122 39% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 122 39% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 122 39% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 122 39% 25%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 84 20% 88%;
+    --secondary-foreground: 122 39% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 84 20% 92%;
+    --muted-foreground: 122 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 42 87% 55%;
+    --accent-foreground: 122 39% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+
+    /* Farm-specific design tokens */
+    --farm-green: 122 39% 25%;
+    --farm-green-light: 122 39% 35%;
+    --farm-yellow: 42 87% 55%;
+    --farm-earth: 28 25% 65%;
+    --farm-sky: 197 37% 85%;
+    
+    /* Gradients */
+    --gradient-farm: linear-gradient(135deg, hsl(var(--farm-green)), hsl(var(--farm-green-light)));
+    --gradient-sky: linear-gradient(180deg, hsl(var(--farm-sky)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-farm: 0 4px 20px hsl(var(--farm-green) / 0.15);
+    --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.1);
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
